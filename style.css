@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width:100vw;
+    height: 200px;
+    background-color: darkblue;
+    padding: 5px;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+    animation-name: animation1;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+    animation-fill-mode: forwards;
+    animation-fill-mode: backwards;
+    animation-fill-mode: ease;
+    animation-fill-mode: ease-in;
+    animation-duration: ease-out;
+    animation-fill-mode: ease-in-out;
+    /* animation-delay: 3s;  */
+    /* animation-direction: alternate; */
+    /* animation-direction: reverse; */ 
+} 
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+h2{
+
+}
+@keyframes animation1{
+    from{
+        width: 200px;
+    }
+    to{
+        width: 100vw;
+    }
+}
+.container1{
+    width:100vw;
+    height: 50vh;
+    background-color:brown;
+    padding: 5px;
+    position: relative;
+}
+.box1{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(206, 119, 6);
+    animation-name: animation2;
+    animation-duration: 5s;
+   /* animation-iteration-count: 3;
+    animation-fill-mode: forwards;
+    animation-fill-mode: backwards;
+    animation-fill-mode: ease;
+    animation-fill-mode: ease-in;
+    animation-duration: ease-out;
+    animation-fill-mode: ease-in-out; */
+}
+@keyframes animation2{
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        top: 217px;
+        left: 0px;
+    }
+    50%{
+        top: 217px;
+        left: 1231px;
+    }
+    75%{
+        top: 0px;
+        left: 1231px;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+    }
+}
